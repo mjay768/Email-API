@@ -13,7 +13,8 @@ def get_stored_contacts():
 def add_contact_card():
     request_data = request.get_json()
     for item in request_data:
-        contact_card = {
+        contact_card = \
+            {
             "name" : item["name"]
         }
         contact_details.append(contact_card)
